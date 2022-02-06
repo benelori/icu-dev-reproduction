@@ -11,3 +11,4 @@ COPY --from=build /usr/local/lib/php/extensions/no-debug-non-zts-20210902/intl.s
 
 RUN apk --no-cache add icu-dev
 
+RUN docker-php-ext-enable intl
